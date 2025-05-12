@@ -1,0 +1,19 @@
+/*
+Faça um algoritmo para apresentar:
+– o cálculo da média das seguintes notas 8.0, 7.5, 4.5 e 9
+*/
+
+
+public class CalculoMediaArray {
+    public static void main(String[] args) {
+        double[] notas = {8.0, 7.5, 4.5, 9.0};
+        double soma = 0;
+
+        for(double nota : notas) {
+            soma += nota;
+        }
+
+        double media = soma / notas.length;
+        System.out.println("A média das notas é: " + media);
+    }
+}
