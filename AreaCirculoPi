@@ -1,0 +1,17 @@
+/*
+Construir um algoritmo para imprimir:
+o cálculo da área de um círculo com raio de 5 cm. (π = 3.14159)
+área do círculo = π ˆ r2
+*/
+
+public class AreaCirculoPi {
+    public static void main(String[] args) {
+
+        final double PI = 3.14159;
+        double raio = 5.0;
+        double area = PI * Math.pow(raio, 2);
+
+        System.out.printf("A área do circulo com raio %.1f cm é: %.2f cm² /n", raio, area);
+
+    }
+}
