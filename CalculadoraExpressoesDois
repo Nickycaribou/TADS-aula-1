@@ -1,0 +1,43 @@
+/* Faça um algoritmo para imprimir em cada linha o resultado 	lógico das seguintes expressões:
+((120 - 30) = (3 ˆ 30))
+(não ((20 módulo 4)= 1) ou (9 != 9))
+((5 módulo 2 ) > 3)
+(a = A
+*/
+
+
+import java.sql.SQLOutput;
+
+public class CalculadoraExpressoesDois {
+    public static void main(String[] args) {
+        char a = 'a';
+        char A = 'A';
+
+        //Expressão 1: (120 - 30) == Math.pow(3, 30)
+        boolean expressao1 = (120 - 30) == Math.pow(3, 30);
+        System.out.println("((120 - 30) == (3 ^30)) é " + expressao1);
+
+        //Expressao 2: ! ((20 % 4) == 1) || (9 != 9)
+        boolean expressao2 = !((20 % 4) == 1 || (9 != 9));
+        System.out.println("(!((20 % 4) == 1) || (9 != 9)) é " + expressao2 );
+
+        //Expressao 3: (5 % 2) > 3
+        boolean expressao3 = (5 % 2) > 3;
+        System.out.println(" ((5 % 2) > 3 é " + expressao3);
+
+        //Expressao 4: (a == A)
+        boolean expressao4 = a == A;
+        System.out.println(" (a == A) é " + expressao4);
+
+    }
+}
+
+/*
+((120 - 30) == (3 ^ 30)) → false (90 não é igual a 3^30)
+
+!((20 % 4) == 1) || (9 != 9)) → true (20%4=0, então !(0==1) é true)
+
+((5 % 2) > 3) → false (5%2=1, que não é maior que 3)
+
+(a == A) → false ('a' minúsculo é diferente de 'A' maiúsculo)
+*/
