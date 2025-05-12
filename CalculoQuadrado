@@ -1,0 +1,19 @@
+/*
+Faça um algoritmo para apresentar:
+O cálculo da área de um quadrado de 350 metros de lado
+*/
+
+public class CalculoQuadrado {
+    public static void main(String[] args) {
+
+        //Definindo o lado do quadrado em metros
+        double lado = 350.0;
+
+        //Calculo da área (lado²)
+        double area = Math.pow(lado, 2);
+
+        System.out.println("A área do quadrado com lado de " + lado + " metros é: ");
+        System.out.println(area + "metros quadrados (m²)");
+        
+    }
+}
