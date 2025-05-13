@@ -1,0 +1,33 @@
+/*
+Construir um algoritmo que leia:
+o ano de nascimento de uma pessoa e o ano atual.
+Calcule e mostre:
+a idade dessa pessoa;
+quantos anos essa pessoa terá em 2030.
+*/
+
+import java.util.Scanner;
+
+public class CalculoIdade {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite o ano de nascimento: ");
+        int anoNascimento = entrada.nextInt();
+
+         System.out.println("Digite o ano atual: ");
+         int anoAtual = entrada.nextInt();
+
+         //Calculo da idade atual
+        int idadeAtual = anoAtual - anoNascimento;
+
+        //Calculo da idade em 2030
+        int idade2030 = 2030 - anoNascimento;
+
+        System.out.println("Idade atual: " + idadeAtual + "anos");
+        System.out.println("Idade em 2030: " + idade2030 + "anos");
+
+        entrada.close();
+
+    }
+}
